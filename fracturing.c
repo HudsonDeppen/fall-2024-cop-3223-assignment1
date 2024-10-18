@@ -19,7 +19,7 @@
 #define PI 3.14159
 
 // Calling out the fractures
-void getPoints(float *);
+void getPoints(float *); // Using the pointer given that I could not return multiple values, using pointers was an alternative
 double calculateDistance();
 double calculatePerimeter();
 double calculateArea();
@@ -48,7 +48,7 @@ int main(int argc, char **argv)
 // Postcondition:       None
 //********************************************************
 
-void getPoints(float *point) 
+void getPoints(float *point) // Using pointers allows me return multiple values by the passing pointers to the function.
 {
     double x1, y1, x2, y2;
 
@@ -75,10 +75,11 @@ void getPoints(float *point)
 
 double calculateDistance() 
 {
-    float point[4];
+    float point[4]; // Calling out array of 4 elements to collect user data
     double x1, y1, x2, y2;
     getPoints(point);
 
+    // Define the array pointers to there respective coordinate value
     x1 = point[0];
     y1 = point[1];
     x2 = point[2];
@@ -108,10 +109,11 @@ double calculateDistance()
 
 double calculatePerimeter() 
 {
-    float point[4];
+    float point[4]; // Same as before
     double x1, y1, x2, y2;
     getPoints(point);
 
+    // Same as before
     x1 = point[0];
     y1 = point[1];
     x2 = point[2];
@@ -143,7 +145,7 @@ double calculatePerimeter()
 
 double calculateArea() 
 {
-    float point[4];
+    float point[4]; // Same as before
     double x1, y1, x2, y2;
     getPoints(point);
 
@@ -179,7 +181,7 @@ double calculateArea()
 
 double calculateWidth() 
 {
-    float point[4];
+    float point[4]; // Same as before
     double x1, y1, x2, y2;
     getPoints(point);
 
@@ -212,7 +214,9 @@ double calculateWidth()
 
 double calculateHeight() 
 {
-    float point[4];
+    // Same as before, unfortunately there is repetition with this  
+    // code, however, was minimized by using the getPoints function
+    float point[4]; 
     double x1, y1, x2, y2;
     getPoints(point);
 
