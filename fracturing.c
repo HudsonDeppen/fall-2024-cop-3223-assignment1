@@ -1,3 +1,17 @@
+//********************************************************
+// fracturing.c
+// Author: Hudson Deppen
+// Student UCFID: 5588676
+// Date: 10/14/24
+// Class: COP 3223, Professor Parra
+//
+// Purpose: Program to demonstrate my ability to house many internal
+// functions, ”fracturing” my code.
+//
+// Input: User, two coordinates for all five functions 
+//
+// //********************************************************
+
 #include <stdio.h>
 #include <math.h>
 
